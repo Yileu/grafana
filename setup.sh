@@ -4,6 +4,7 @@ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 sleep 5
 sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sleep 5
 systemctl enable docker
 systemctl start docker
 
@@ -14,13 +15,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-
 sleep 5
 sudo chmod +x /usr/local/bin/docker-compose
 /usr/local/bin/docker-compose --version
-sleep 5
-yum install -y git
-
-sleep 5
-
-git clone https://github.com/Yileu/grafana.git
-
 sleep 5
 
 ipadd=`echo $(hostname -I) | awk '{print $1}'`
