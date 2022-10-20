@@ -1,31 +1,16 @@
 global:
-
  resolve_timeout: 1m
 
-
-
 route:
-
  receiver: 'email-notifications'
 
-
-
 receivers:
-
 - name: 'email-notifications'
-
   email_configs:
-
   - to: 'devops.dxc102@gmail.com'
-
     from: 'devops.dxc102@gmail.com'
-
     smarthost: smtp.gmail.com:587
-
     auth_username: 'devops.dxc102@gmail.com'
-
     auth_identity: 'devops.dxc102@gmail.com'
-
     auth_password: 'ilbonhdkqyhqgsgn'
-
 #    send_resolved: true
