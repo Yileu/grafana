@@ -11,7 +11,7 @@ systemctl start docker
 
 
 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.0-rc.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sleep 5
 sudo chmod +x /usr/local/bin/docker-compose
 /usr/local/bin/docker-compose --version
